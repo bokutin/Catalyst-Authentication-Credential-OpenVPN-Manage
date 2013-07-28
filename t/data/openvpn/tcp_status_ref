@@ -1,0 +1,73 @@
+--- 
+CLIENT_LIST: 
+  - 
+    - 61
+    - 114.150.8.138:8159
+    - 172.29.0.222
+    - 2323792
+    - 2838981
+    - Wed Jul 24 10:43:55 2013
+    - '1374630235'
+    - "UNDEF\n"
+  - 
+    - 78
+    - 114.150.7.130:49303
+    - 172.29.1.38
+    - 4406984
+    - 3295358
+    - Tue Jul 23 13:19:36 2013
+    - '1374553176'
+    - "UNDEF\n"
+  - 
+    - 6C
+    - 180.2.144.249:63985
+    - 172.29.0.250
+    - 12513468
+    - 20719087
+    - Thu Jul 11 08:31:17 2013
+    - '1373499077'
+    - "UNDEF\n"
+GLOBAL_STATS: "Max bcast/mcast queue length,0\n"
+HEADER: 
+  CLIENT_LIST: 
+    - Common Name
+    - Real Address
+    - Virtual Address
+    - Bytes Received
+    - Bytes Sent
+    - Connected Since
+    - Connected Since (time_t)
+    - "Username\n"
+  ROUTING_TABLE: 
+    - Virtual Address
+    - Common Name
+    - Real Address
+    - Last Ref
+    - "Last Ref (time_t)\n"
+ROUTING_TABLE: 
+  - 
+    - 172.29.0.250
+    - 6C
+    - 180.2.144.249:63985
+    - Sat Jul 27 11:45:01 2013
+    - '1374893101
+
+'
+  - 
+    - 172.29.0.222
+    - 61
+    - 114.150.8.138:8159
+    - Sat Jul 27 10:05:29 2013
+    - '1374887129
+
+'
+  - 
+    - 172.29.1.38
+    - 78
+    - 114.150.7.130:49303
+    - Thu Jul 25 14:32:18 2013
+    - '1374730338
+
+'
+TIME: "Sun Jul 28 15:44:12 2013,1374993852\n"
+TITLE: "OpenVPN 2.3.1 i386-portbld-freebsd9.1 [SSL (OpenSSL)] [LZO] [eurephia] [MH] [IPv6] built on May 15 2013\n"

@@ -1,0 +1,10 @@
+--- 
+- "OpenVPN CLIENT LIST\n"
+- "Updated,Sun Jul 28 15:42:04 2013\n"
+- "Common Name,Real Address,Bytes Received,Bytes Sent,Connected Since\n"
+- "05,114.167.193.99:62776,3847,4887,Sun Jul 28 15:41:33 2013\n"
+- "ROUTING TABLE\n"
+- "Virtual Address,Common Name,Real Address,Last Ref\n"
+- "172.27.0.18,05,114.167.193.99:62776,Sun Jul 28 15:41:34 2013\n"
+- "GLOBAL STATS\n"
+- "Max bcast/mcast queue length,0\n"

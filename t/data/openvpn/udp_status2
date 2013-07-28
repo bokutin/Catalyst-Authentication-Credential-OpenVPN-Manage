@@ -1,0 +1,8 @@
+--- 
+- "TITLE,OpenVPN 2.3.1 i386-portbld-freebsd9.1 [SSL (OpenSSL)] [LZO] [eurephia] [MH] [IPv6] built on May 15 2013\n"
+- "TIME,Sun Jul 28 15:42:04 2013,1374993724\n"
+- "HEADER,CLIENT_LIST,Common Name,Real Address,Virtual Address,Bytes Received,Bytes Sent,Connected Since,Connected Since (time_t),Username\n"
+- "CLIENT_LIST,05,114.167.193.99:62776,172.27.0.18,3847,4887,Sun Jul 28 15:41:33 2013,1374993693,UNDEF\n"
+- "HEADER,ROUTING_TABLE,Virtual Address,Common Name,Real Address,Last Ref,Last Ref (time_t)\n"
+- "ROUTING_TABLE,172.27.0.18,05,114.167.193.99:62776,Sun Jul 28 15:41:34 2013,1374993694\n"
+- "GLOBAL_STATS,Max bcast/mcast queue length,0\n"
