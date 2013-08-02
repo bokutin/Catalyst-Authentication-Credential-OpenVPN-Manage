@@ -1,5 +1,25 @@
 {{$NEXT}}
 
+0.132140  2013-08-02 Fri 10:27:00 Asia/Tokyo
+
+    - Net::OpenVPN::Manageのインスタンスを保持せず、毎回接続し直すようにする。
+
+	OpenVPNの現在の接続状況を取得するには、次の二つがある。
+
+	    * /usr/local/etc/openvpn/openvpn-status.log のファイルを読む。
+
+		デフォルトでは 60秒ごとに更新される。
+		SIGUSR2を送って、書かせることも可能。
+
+	    * management port に telnet でアクセス。
+
+		同時接続は1接続まで。
+
+		benchmark/management_port.pl によれば
+		接続、取得、切断を毎回行なっても、1000/s 程度で動作する。
+
+	持ってきた元のコードを見たら、毎回、接続と切断を行なってた。
+
 0.132120  2013-08-01 Thu 03:57:30 Asia/Tokyo
 
     - 個人プロジェクトからもってきた。
