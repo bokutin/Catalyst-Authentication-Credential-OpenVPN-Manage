@@ -50,22 +50,20 @@ sub openvpn_server_status {
 sub vpn {
     my ($self, $c) = @_;
 
-    $self->{vpn} ||= do {
-        my $vpn = Net::OpenVPN::Manage->new({ 
-            host    => $self->{host},
-            port    => $self->{port},
-            timeout => 1,
-        });
+    my $vpn = Net::OpenVPN::Manage->new({ 
+        host    => $self->{host},
+        port    => $self->{port},
+        timeout => $self->{timeout} || 5,
+    });
 
-        if ($vpn->connect) {
-            $c->log->debug( "OpenVPN Management Port connection succeeded. (@{[ $self->{host} ]}:@{[ $self->{port} ]})" );
-            $vpn;
-        }
-        else {
-            $c->log->fatal( "OpenVPN Management Port connection failed. (@{[ $self->{host} ]}:@{[ $self->{port} ]})" );
-            undef;
-        }
-    };
+    if ($vpn->connect) {
+        $c->log->debug( "OpenVPN Management Port connection succeeded. (@{[ $self->{host} ]}:@{[ $self->{port} ]})" );
+        $vpn;
+    }
+    else {
+        $c->log->fatal( "OpenVPN Management Port connection failed. (@{[ $self->{host} ]}:@{[ $self->{port} ]})" );
+        undef;
+    }
 }
 
 1;
